@@ -1,0 +1,53 @@
+{
+  "graph": {
+    "datasequences": [
+      {
+        "datapoints": [
+          {
+            "value": 12,
+            "title": "2008"
+          },
+          {
+            "value": 2,
+            "title": "2009"
+          },
+          {
+            "value": 27.9,
+            "title": "2011"
+          },
+          {
+            "value": 45,
+            "title": "2012"
+          }
+        ],
+        "title": "X-Cola!"
+      },
+      {
+        "datapoints": [
+          {
+            "value": 18.4,
+            "title": "2008"
+          },
+          {
+            "value": 20.1,
+            "title": "2009"
+          },
+          {
+            "value": 24.8,
+            "title": "2010"
+          },
+          {
+            "value": 26.1,
+            "title": "2011"
+          },
+          {
+            "value": 29,
+            "title": "2012"
+          }
+        ],
+        "title": "Y-Cola"
+      }
+    ],
+    "title": "Soft Drink Sales JSON"
+  }
+}
