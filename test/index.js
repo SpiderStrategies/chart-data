@@ -1,5 +1,5 @@
 var assert = require('assert')
-  , manipulator = require('../lib')
+  , manipulator = require('../')
   , _ = require('lodash')
 
 describe('Manipulates chart data', function () {
@@ -29,12 +29,12 @@ describe('Manipulates chart data', function () {
     assert.equal(chartData.length, 2)
     assert.equal(chartData[0].title, 'X-Cola!')
     assert.equal(chartData[0].datapoints.length, 4)
-    assert.deepEqual(_.pluck(chartData[0].datapoints, 'value'), [12, 2, 27.9, 45])
+    assert.deepEqual(_.map(chartData[0].datapoints, 'value'), [12, 2, 27.9, 45])
 
     assert.equal(chartData[1].title, 'Y-Cola')
     assert.equal(chartData[1].datapoints.length, 5)
-    assert.deepEqual(_.pluck(chartData[1].datapoints, 'title'), ['2008', '2009', '2011', '2012', '2010'])
-    assert.deepEqual(_.pluck(chartData[1].datapoints, 'value'), [18.4, 20.1, 26.1, 29, 24.8])
+    assert.deepEqual(_.map(chartData[1].datapoints, 'title'), ['2008', '2009', '2011', '2012', '2010'])
+    assert.deepEqual(_.map(chartData[1].datapoints, 'value'), [18.4, 20.1, 26.1, 29, 24.8])
   })
 
   it('determines the duration set based on a timeframe', function () {
